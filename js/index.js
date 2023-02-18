@@ -6,14 +6,7 @@ document.getElementById('blog-btn').addEventListener('click', function(){
 
 
 
-// card hover background
-document.getElementById('cardbg').addEventListener('mouseenter',function(){
 
-    let number = Math.floor(Math.random()*16777215);
-    let colorCode = '#'+number.toString(16);
-    this.style.backgroundColor = colorCode;
-    console.log(colorCode);
-})
 
 let count = 0;
 // calculation button
