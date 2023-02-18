@@ -5,9 +5,6 @@ document.getElementById('blog-btn').addEventListener('click', function(){
 
 
 
-
-
-
 let count = 0;
 
 // calculation button triangle
@@ -31,7 +28,7 @@ document.getElementById('triangle-btn').addEventListener('click',function(){
         return triangleinput_2
     }
 
-    const area = 0.5 * parseFloat(triangleinput_1) * parseFloat(triangleinput_2) ;
+    const area = (0.5 * parseFloat(triangleinput_1) * parseFloat(triangleinput_2)).toFixed(2) ;
     if(isNaN(area) ){
         alert('Inputs are not valid');
         return area;
@@ -63,7 +60,7 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
         return rectangleInput_2;
     }
 
-    const areaOfrectangle = parseFloat(rectangleInput_1) * parseFloat(rectangleInput_2) ;
+    const areaOfrectangle = (parseFloat(rectangleInput_1) * parseFloat(rectangleInput_2)).toFixed(2) ;
 
     if(isNaN(areaOfrectangle)){
         alert('Inputs are not valid');
@@ -96,7 +93,7 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
     }
     
 
-    const areaOfparallelogram = parseFloat(parallelogramInput_1) * parseFloat(parallelogramInput_1) ;
+    const areaOfparallelogram = (parseFloat(parallelogramInput_1) * parseFloat(parallelogramInput_1)).toFixed(2) ;
 
     if(isNaN(areaOfparallelogram)){
         alert('Inputs are not valid');
@@ -128,7 +125,7 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
 
     }
 
-    const areaOfrhombus = 0.5 * parseFloat(rhombusInput_1) * parseFloat(rhombusInput_2) ;
+    const areaOfrhombus = (0.5 * parseFloat(rhombusInput_1) * parseFloat(rhombusInput_2)).toFixed(2) ;
 
     if(isNaN(areaOfrhombus)){
         alert('Inputs are not valid');
@@ -160,7 +157,7 @@ document.getElementById('pentagon-btn').addEventListener('click', function(){
 
     }
 
-    const areaOfPentagon = 0.5 * parseFloat(PentagonInput_1) * parseFloat(PentagonInput_2) ;
+    const areaOfPentagon = (0.5 * parseFloat(PentagonInput_1) * parseFloat(PentagonInput_2)).toFixed(2);
 
     if(isNaN(areaOfPentagon)){
         alert('Inputs are not valid');
