@@ -94,6 +94,28 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
 
 
 })
+// Pentagon
+document.getElementById('pentagon-btn').addEventListener('click', function(){
+    count+=1;
+  
+    const rhombusamName = document.getElementById('pentagon').innerText;
+
+    const PentagonInput_1 = document.getElementById('PentagonInput_1').value;
+    const PentagonInput_2= document.getElementById('PentagonInput_2').value;
+
+    const areaOfPentagon = 0.5 * parseFloat(PentagonInput_1) * parseFloat(PentagonInput_2) ;
+
+    if(isNaN(areaOfPentagon)){
+        alert('Inputs are not valid');
+        return areaOfPentagon;
+    }
+
+  
+   displayResult(count, rhombusamName, areaOfPentagon);
+
+
+
+})
 
 
 
