@@ -62,51 +62,55 @@
                       <img src="./images/rectangle.png" alt="Rectangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title font-bold" >Rectangle</h2>
+                      <h2 class="card-title font-bold" id="rectangle">Rectangle</h2>
                       <p>Area (A) = w * l</p>
                       <div class="mt-4">
-                        <input type="text" name="w" id="" placeholder="w" class=" placeholder-shown:bg-gray-200 px-4 w-16"  >   <span> cm</span>
-                        <input type="text" name="l" id="" placeholder="l" class=" placeholder-shown:bg-gray-200 px-4 w-16"  > cm 
+                        <input type="text" name="w" id="rectangle-input-1" placeholder="w" class=" placeholder-shown:bg-gray-200 px-4 w-16"  >   <span> cm</span>
+                        <input type="text" name="l" id="rectangle-input-2" placeholder="l" class=" placeholder-shown:bg-gray-200 px-4 w-16"  > cm 
 
                       </div>
                       <div class="card-actions mt-6">
-                        <button class="btn btn-primary px-20">Calculation</button>
+                        <button class="btn btn-primary px-20" id="rectangle-btn">Calculation</button>
                       </div>
                     </div>
                   </div>
+
+
+
                 <!-- Parallelogram -->
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                       <img src="./images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title font-bold">Parallelogram</h2>
+                      <h2 class="card-title font-bold" id="parallelogram">Parallelogram</h2>
                       <p>Area (A) = b * h</p>
                       <div class="mt-4">
-                        <input type="text" name="b" id="" placeholder="b" class=" placeholder-shown:bg-gray-200 px-4 w-16"  >   <span> cm</span>
-                        <input type="text" name="h" id="" placeholder="h" class=" placeholder-shown:bg-gray-200 px-4 w-16"  > cm 
+                        <input type="text" name="b" id="parallelogramInput_1" placeholder="b" class=" placeholder-shown:bg-gray-200 px-4 w-16"  >   <span> cm</span>
+                        <input type="text" name="h" id="parallelogramInput_2" placeholder="h" class=" placeholder-shown:bg-gray-200 px-4 w-16"  > cm 
 
                       </div>
                       <div class="card-actions mt-6">
-                        <button class="btn btn-primary px-20">Calculation</button>
+                        <button class="btn btn-primary px-20" id="parallelogram-btn">Calculation</button>
                       </div>
                     </div>
                   </div>
+
                 <!-- Rhombus -->
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                       <img src="./images/rhombus.png" alt="Rhombus" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title font-bold">Rhombus</h2>
+                      <h2 class="card-title font-bold" id="rhombus">Rhombus</h2>
                       <p>Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub> </p>
                       <div class="mt-4">
-                        <input type="text" name="d1" id="" placeholder="d1" class=" placeholder-shown:bg-gray-200 px-4 w-16"  >   <span> cm</span>
-                        <input type="text" name="d2" id="" placeholder="d2" class=" placeholder-shown:bg-gray-200 px-4 w-16"  > cm 
+                        <input type="text" name="d1" id="rhombusInput_1" placeholder="d1" class=" placeholder-shown:bg-gray-200 px-4 w-16"  >   <span> cm</span>
+                        <input type="text" name="d2" id="rhombusInput_2" placeholder="d2" class=" placeholder-shown:bg-gray-200 px-4 w-16"  > cm 
 
                       </div>
                       <div class="card-actions mt-6">
-                        <button class="btn btn-primary px-20">Calculation</button>
+                        <button class="btn btn-primary px-20" id="rhombus-btn">Calculation</button>
                       </div>
                     </div>
                   </div>
@@ -154,14 +158,7 @@
                 <h2 class="text-2xl underline font-bold">Area Calculation</h2>
                 <div class="overflow-x-auto">
                     <table class="table w-full">
-                        <!-- <thead>
-                            <tr>
-                              <th>No</th>
-                              <th>Name</th>
-                              <th>Price</th>
-                              <th>Total</th>
-                            </tr>
-                          </thead> -->
+                       
                          
                      
                     
