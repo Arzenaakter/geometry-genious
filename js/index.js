@@ -116,6 +116,29 @@ document.getElementById('pentagon-btn').addEventListener('click', function(){
 
 
 })
+// Ellipse
+document.getElementById('ellipse-btn').addEventListener('click', function(){
+    count+=1;
+  
+    const EllipseName = document.getElementById('ellipse').innerText;
+
+    const ellipseInput_1 = document.getElementById('ellipseInput_1').value;
+    const ellipseInput_2= document.getElementById('ellipseInput_2').value;
+    const pi = 3.14;
+
+    const areaOfEllipse = (pi * parseFloat(ellipseInput_1) * parseFloat(ellipseInput_2)).toFixed(2) ;
+
+    if(isNaN(areaOfEllipse)){
+        alert('Inputs are not valid');
+        return areaOfEllipse;
+    }
+
+  
+   displayResult(count, EllipseName, areaOfEllipse);
+
+
+
+})
 
 
 
