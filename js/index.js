@@ -9,12 +9,11 @@ document.getElementById('blog-btn').addEventListener('click', function(){
 
 
 let count = 0;
-// calculation button
 
-
+// calculation button triangle
 
 document.getElementById('triangle-btn').addEventListener('click',function(){
-    count+=1;
+   
 
     const triangleName = document.getElementById('traiangle').innerText;
 
@@ -27,9 +26,9 @@ document.getElementById('triangle-btn').addEventListener('click',function(){
     }
     const triangleinput_2= document.getElementById('triangle-input-2').value;
 
-    if(triangleinput_1<0){
+    if(triangleinput_2<0){
         alert('please give a positive number');
-        triangleinput_2
+        return triangleinput_2
     }
 
     const area = 0.5 * parseFloat(triangleinput_1) * parseFloat(triangleinput_2) ;
@@ -38,7 +37,7 @@ document.getElementById('triangle-btn').addEventListener('click',function(){
         return area;
     }
 
-  
+    count+=1;
    displayResult(count, triangleName, area);
    
 })
@@ -46,7 +45,7 @@ document.getElementById('triangle-btn').addEventListener('click',function(){
 
 // rectangle 
 document.getElementById('rectangle-btn').addEventListener('click', function(){
-    count+=1;
+    
   
     const rectangleName = document.getElementById('rectangle').innerText;
 
@@ -71,7 +70,7 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
         return areaOfrectangle;
     }
 
-  
+    count+=1;
    displayResult(count, rectangleName, areaOfrectangle);
 
 
@@ -79,7 +78,7 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
 })
 // Parallelogram
 document.getElementById('parallelogram-btn').addEventListener('click', function(){
-    count+=1;
+   
   
     const parallelogramName = document.getElementById('parallelogram').innerText;
 
@@ -104,7 +103,7 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
         return areaOfparallelogram;
     }
 
-  
+    count+=1;
    displayResult(count, parallelogramName, areaOfparallelogram);
 
 
@@ -112,7 +111,7 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
 })
 // Rhombus
 document.getElementById('rhombus-btn').addEventListener('click', function(){
-    count+=1;
+   
   
     const rhombusamName = document.getElementById('rhombus').innerText;
 
@@ -136,7 +135,7 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
         return areaOfrhombus;
     }
 
-  
+    count+=1;
    displayResult(count, rhombusamName, areaOfrhombus);
 
 
@@ -144,7 +143,7 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
 })
 // Pentagon
 document.getElementById('pentagon-btn').addEventListener('click', function(){
-    count+=1;
+
   
     const rhombusamName = document.getElementById('pentagon').innerText;
 
@@ -168,7 +167,7 @@ document.getElementById('pentagon-btn').addEventListener('click', function(){
         return areaOfPentagon;
     }
 
-  
+    count+=1;
    displayResult(count, rhombusamName, areaOfPentagon);
 
 
@@ -176,7 +175,7 @@ document.getElementById('pentagon-btn').addEventListener('click', function(){
 })
 // Ellipse
 document.getElementById('ellipse-btn').addEventListener('click', function(){
-    count+=1;
+
   
     const EllipseName = document.getElementById('ellipse').innerText;
 
@@ -200,7 +199,7 @@ document.getElementById('ellipse-btn').addEventListener('click', function(){
         alert('Inputs are not valid');
         return areaOfEllipse;
     }
-
+    count+=1;
   
    displayResult(count, EllipseName, areaOfEllipse);
 
